@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Task 04 creating a calculator using HTML CSS JS">
+    <meta name="author" content="Parsa riaz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/asserts/calicon.png">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="calculator">
+                <div class="btns-container">
+                    <div class="row">
+                        <div id="expression" class="screen">0</div>
+                    </div>
+                    <div class="row">
+                        <div onclick="clearExp()" class="btn btn-font cancel">C</div>
+                        <div onclick="negativeVal()" class="btn btn-font">&#177</div>
+                        <div onclick="createExp('%')" class="btn btn-font">%</div>
+                        <div onclick="consoleLog()" class="btn console">console log</div>
+                    </div>
+                    <div class="row">
+                        <div onclick="createExp('7')" class="btn btn-font">7</div>
+                        <div onclick="createExp('8')" class="btn btn-font">8</div>
+                        <div onclick="createExp('9')" class="btn btn-font">9</div>
+                        <div onclick="createExp('/')" class="btn btn-font operator ">&#247;</div>
+                    </div>
+                    <div class="row">
+                        <div onclick="createExp('4')" class="btn btn-font">4</div>
+                        <div onclick="createExp('5')" class="btn btn-font">5</div>
+                        <div onclick="createExp('6')" class="btn btn-font">6</div>
+                        <div onclick="createExp('*')" class="btn btn-font operator">x</div>
+                    </div>
+                    <div class="row">
+                        <div onclick="createExp('1')" class="btn btn-font" onclick="">1</div>
+                        <div onclick="createExp('2')" class="btn btn-font">2</div>
+                        <div onclick="createExp('3')" class="btn btn-font">3</div>
+                        <div onclick="createExp('-')" class="btn btn-font operator">-</div>
+                    </div>
+                    <div class="row">
+                        <div onclick="createExp('0')" class="btn btn-font">0</div>
+                        <div onclick="createExp('.')" class="btn btn-font">.</div>
+                        <div onclick="calculateResult()" class="btn  btn-font equal">=</div>
+                        <div onclick="createExp('+')" class="btn btn-font operator">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
